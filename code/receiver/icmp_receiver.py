@@ -1,7 +1,7 @@
 import scapy.all as scapy
 
 # set constants
-NUM_OF_PACKET = 5
+NUM_OF_PACKET = 1
 
 def check_and_show_packet(packet):
     # check for icmp layer and ttl 

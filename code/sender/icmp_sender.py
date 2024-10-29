@@ -4,7 +4,7 @@ import scapy.all as scapy
 TTL = 1
 DESTINATION = 'receiver'
 
-NUM_OF_PACKET = 5
+NUM_OF_PACKET = 1
 
 def send_packet():
     # create the packet
