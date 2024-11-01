@@ -6,7 +6,9 @@
 Basic ICMP Documentation
 ========================
 
-Please add your names and group ID here by editing `index.rst` in the docs folder.
+Group 33
+Burak Zaifoğlu 
+Efe Yılmaz
 
 
 .. toctree::
