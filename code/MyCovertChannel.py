@@ -1,5 +1,6 @@
 from CovertChannelBase import CovertChannelBase
 from scapy.all import IP, UDP, DNS
+import warnings
 import random
 import time
 
@@ -18,6 +19,10 @@ class MyCovertChannel(CovertChannelBase):
         - In this function, you expected to create a random message (using function/s in CovertChannelBase), and send it to the receiver container. Entire sending operations should be handled in this function.
         - After the implementation, please rewrite this comment part to explain your code basically.
         """
+
+
+        # Without this, it was giving me a warning because of code in CoverChannelBase.py
+        warnings.filterwarnings("ignore", category=SyntaxWarning)
 
         # The actual message that will be sent through covert channel
         binary_message = self.generate_random_binary_message_with_logging(log_file_name)
